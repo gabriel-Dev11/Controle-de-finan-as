@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Finanças</title>
+
+    
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div>
+            <div class="resumo">
+                <div>
+                    Entrada: R$
+                    <span class="incomes">0.00</span>
+                </div>
+                <div>
+                    Saidas: R$
+                    <span class="expenses">0.00</span>
+                </div>
+                <div>
+                    Total: R$
+                    <span class="expenses">0.00</span>
+                </div>
+            </div>
+                <div class="newItem">
+                    <div class="divDesc">
+                        <label for="desc">Descriçao</label>
+                        <input type="text" id="desc" />
+                    </div>
+                    <div class="divtype">
+                        <label for="amount">Valor</label>
+                        <input type="number" id="amount" />
+                    </div>
+                    <div class="divtype">
+                        <label for="type">Tipo</label>
+                        <select id="type">
+                            <option>Entrada</option>
+                            <option>Saida</option>
+                            </select>
+                    </div>
+                    <button id="btnNew">Incluir</button>
+                </div>
+                <main class="divTable">
+                    <table>
+                        <thead>
+                            <tr>
+                                <tr>Descrição</tr>
+                                <th class="columnAmout">Valor</th>
+                                <th class="columnAmout">Tipo</th>
+                                <th class="columnAmout"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </main>
+
+            <script src="script.js"></script>
+
+
+</body>
+</html>
